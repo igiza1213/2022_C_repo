@@ -1,84 +1,84 @@
 #include <stdio.h>
 main(){
-//	int n = 0;
-//	while(n < 5){
-//		printf("Hi~\n");
-//		n++;
-//	}
-//	printf("n = %d", n);
+// 	int n = 0;
+// 	while(n < 5){
+// 		printf("Hi~\n");
+// 		n++;
+// 	}
+// 	printf("n = %d", n);
 	
-//	int i = 1;
-//	while(i <= 10){
-//		printf("#");
-//		i++;
-//	}
+// 	int i = 1;
+// 	while(i <= 10){
+// 		printf("#");
+// 		i++;
+// 	}
 
-//	int num = 1;
-//	while(num <= 5){
-//		printf("¹Ýº¹³»¿ë : %d \n", num);
-//		num++;
-//	}
-//	printf("¹Ýº¹¹® Á¾·á ÈÄ num = %d \n", num);
+// 	int num = 1;
+// 	while(num <= 5){
+// 		printf("ï¿½Ýºï¿½ï¿½ï¿½ï¿½ï¿½ : %d \n", num);
+// 		num++;
+// 	}
+// 	printf("ï¿½Ýºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ num = %d \n", num);
 
-//	int i = 30;
-//	while(i >= 10){
-//		printf("%d ", i);
-//		i -= 2;
-//	}
+// 	int i = 30;
+// 	while(i >= 10){
+// 		printf("%d ", i);
+// 		i -= 2;
+// 	}
 
-//	int i = 1, sum = 0;
-//	while(i <= 10){
-//		sum += i;
-//		i++;	
-//	}
-//	printf("1ºÎÅÍ 10±îÁöÀÇ ÇÕ : %d", sum);
+// 	int i = 1, sum = 0;
+// 	while(i <= 10){
+// 		sum += i;
+// 		i++;	
+// 	}
+// 	printf("1ï¿½ï¿½ï¿½ï¿½ 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : %d", sum);
 
-//	int i, n, sum = 0, temp= 0;
-//	printf("½ÃÀÛ¼ö  : ");
-//	scanf("%d", &i);
-//	printf("¸¶Áö¸· ¼ö  : ");
-//	scanf("%d", &n);
-//	temp = i;
-//	while(i <= n){
-//		sum += i;
-//		i++;
-//	}
-//	printf("%dºÎÅÍ %d±îÁöÀÇ ÇÕÀº %dÀÔ´Ï´Ù\n", temp, n, sum);
+// 	int i, n, sum = 0, temp= 0;
+// 	printf("ï¿½ï¿½ï¿½Û¼ï¿½  : ");
+// 	scanf("%d", &i);
+// 	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½  : ");
+// 	scanf("%d", &n);
+// 	temp = i;
+// 	while(i <= n){
+// 		sum += i;
+// 		i++;
+// 	}
+// 	printf("%dï¿½ï¿½ï¿½ï¿½ %dï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ %dï¿½Ô´Ï´ï¿½\n", temp, n, sum);
 
-//int i = 1;
-//	printf("*** 2´Ü ***\n");
-//	while(i < 10){
-//		printf("2 * %d = %d\n", i, 2 * i);
-//		i++;
-//	}
+// int i = 1;
+// 	printf("*** 2ï¿½ï¿½ ***\n");
+// 	while(i < 10){
+// 		printf("2 * %d = %d\n", i, 2 * i);
+// 		i++;
+// 	}
 
-//	int dan, i = 9;	
-//	while(true){
-//		i = 9;
-//		printf("¸î ´Ü? ");
-//		scanf("%d", &dan);
-//		while(i >= 1){
-//			printf("%d * %d = %d\n", dan, i, dan * i);
-//			i--;
-//		}
-//		if(dan == 0){
-//			printf("bye~");
-//			break;
-//		}
-//	}
+// 	int dan, i = 9;	
+// 	while(true){
+// 		i = 9;
+// 		printf("ï¿½ï¿½ ï¿½ï¿½? ");
+// 		scanf("%d", &dan);
+// 		while(i >= 1){
+// 			printf("%d * %d = %d\n", dan, i, dan * i);
+// 			i--;
+// 		}
+// 		if(dan == 0){
+// 			printf("bye~");
+// 			break;
+// 		}
+// 	}
 
-//	int count = 1;
-//	while(true){
-//		printf("%d ", count);
-//		count++;
-//		if(count > 10) break;
-//	}
+// 	int count = 1;
+// 	while(true){
+// 		printf("%d ", count);
+// 		count++;
+// 		if(count > 10) break;
+// 	}
 
-//	int i = 1, sum = 0;
-//	while(true){
-//		sum += i;
-//		i += 2;
-//		if(i > 100) break;
-//	}
-//	printf("1ºÎÅÍ 100±îÁö È¦¼öÀÇ ÇÕ = %d\n", sum);
+// 	int i = 1, sum = 0;
+// 	while(true){
+// 		sum += i;
+// 		i += 2;
+// 		if(i > 100) break;
+// 	}
+// 	printf("1ï¿½ï¿½ï¿½ï¿½ 100ï¿½ï¿½ï¿½ï¿½ È¦ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ = %d\n", sum);
 }
