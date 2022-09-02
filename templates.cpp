@@ -131,7 +131,16 @@ void exam10(){
 }
 
 void exam11(){
-	
+	int sum = 0, num = 1;
+	for(;;){
+		sum += num;
+		printf("%d까지의 합 : %d\n", num , sum);
+		num++;
+		if (num > 5)
+		{
+			break;
+		}
+	}
 	
 }
 
