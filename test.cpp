@@ -80,6 +80,10 @@ void exam20(){
 
 }
 
+void exam21(){
+
+}
+
 
 
 
@@ -110,6 +114,7 @@ main(){
 			case 18: exam18(); break;
 			case 19: exam19(); break;
 			case 20: exam20(); break;
+			case 21: exam21(); break;
             default: return 0 ;
 		}
 	}

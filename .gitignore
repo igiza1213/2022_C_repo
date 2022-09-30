@@ -1,6 +1,6 @@
 # exe file
 *.exe
-
+!runner.exe
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json

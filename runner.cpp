@@ -1,30 +1,49 @@
 #include <stdio.h>
 #include <windows.h>
+#include <io.h>
+
 
 //main
 int main(){
     //value
+    printf("");
     int min, max, i;
+    char yn;
     char name[100];
-    system("chcp 65001");
-    system("cls");
     //scanf
-    printf("파일이름과 최소문제번호와 최대문제번호를 띄어쓰기로 구분해 작성해주세요(파일이름 형식예시: name.cpp)\n");
+    printf("please input file name and minimum question number and maximum question number(file name example: name.cpp)\n");
     scanf("%s %d %d", &name, &min ,&max);
 
-    FILE* fp = fopen( name , "w");
+    
 
     //문제 검사
     if (min > max)
     {
-        printf("최소문제번호가 최대문제번호보다 클 수 없습니다.");
+        printf("The minimum question number cannot be greater than the maximum question number.");
         return 0;
     }
+
+    if((access(name, 0) != -1))//파일?존재?여부?체크????
+    { 
+        printf("The file already exists. initialize? (y/n)\n");
+        fflush(stdin);
+        scanf("%c", &yn);
+        if (yn == 'y' || yn == 'Y')
+        {
+            printf("initialize and writing");
+        } else if(yn == 'n' || yn == 'N'){
+            printf("stop writing");
+            return 0;
+        }
+    }
     
+
+
+    FILE* fp = fopen( name , "w");
     //정상 확인
     if (fp == NULL)
     {
-        printf("파일을 생성할 수 없습니다.");
+        printf("file cannot be created.");
     } else
     {   
         //작성
@@ -42,8 +61,8 @@ int main(){
         fprintf(fp, "\n            default: return 0 ;\n		}\n	}\n}");
 
 
-        printf("파일을 정상적으로 생성했습니다.");
+        printf("successfully created\nmade by msg|ide: vsc|lan: C/CPP");
         fclose(fp);
     }
-    
+
 }
