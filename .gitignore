@@ -26,4 +26,9 @@
 # Ignore code-workspaces
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+dev c++/do_while.exe
+dev c++/while_test.exe
+dev c++/while.exe
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json

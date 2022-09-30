@@ -144,25 +144,6 @@ void exam11(){
 	
 }
 
-void exam12(){
-	
-	
-}
-
-void exam13(){
-	
-	
-}
-
-void exam14(){
-	
-	
-}
-
-void exam15(){
-	
-	
-}
 
 
 
@@ -184,10 +165,6 @@ main(){
 			case 9: exam9(); break;
 			case 10: exam10(); break;
 			case 11: exam11(); break;
-			case 12: exam12(); break;
-			case 13: exam13(); break;
-			case 14: exam14(); break;
-			case 15: exam15(); break;
 			default: return 0 ;
 		}
 	}
