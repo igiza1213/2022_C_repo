@@ -111,7 +111,22 @@ void exam6(){
 }
 
 void exam7(){
+	int input, sum = 0;
+	scanf("%d", &input);
 
+	while (1)
+	{
+		if (input <= 0)
+		{
+			break;	
+		}
+		
+		sum = sum + input % 10;
+		input = input / 10;
+		printf("%d + ", input);
+		
+	}
+	printf("=%d\n", sum);
 }
 
 void exam8(){
@@ -134,7 +149,7 @@ main(){
 	while(1){
     	printf("\n문제 번호: ");
 		scanf("%d", &num);
-		printf("%d번 문제========================================================================\n", num);
+		printf("%d번 문제================================================================================================================================================\n", num);
 		switch(num){
 			case 1: exam1(); break;
 			case 2: exam2(); break;

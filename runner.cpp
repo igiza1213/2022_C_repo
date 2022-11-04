@@ -53,7 +53,7 @@ int main(){
             fprintf(fp, "\n\nvoid exam%d(){\n\n}", i);
 
         }
-        fprintf(fp, "\n\n\n\n\nmain(){\n	int num;\n	while(1){\n    	printf(\"\\n문제 번호: \");\n		scanf(\"%%d\", &num);\n		printf(\"%%d번 문제========================================================================\\n\", num);\n		switch(num){");
+        fprintf(fp, "\n\n\n\n\nmain(){\n	int num;\n	while(1){\n    	printf(\"\\nexam number: \");\n		scanf(\"%%d\", &num);\n		printf(\"%%d exam========================================================================\\n\", num);\n		switch(num){");
         for (i = min; i <= max; i++)
         {
             fprintf(fp, "\n			case %d: exam%d(); break;", i, i);
@@ -61,7 +61,7 @@ int main(){
         fprintf(fp, "\n            default: return 0 ;\n		}\n	}\n}");
 
 
-        printf("successfully created\nmade by msg|ide: vsc|lan: C/CPP");
+        printf("successfully created\nmade by msg|ide: vsc|lan: C/CPP|ver: 1.0.1");
         fclose(fp);
     }
 
