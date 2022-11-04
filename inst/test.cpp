@@ -147,15 +147,49 @@ void exam7(){
 }
 
 void exam8(){
+	int n, i;
+    scanf("%d", &n);
+	int array[1000];
+	for(i = 0; i < n; i++){
+		scanf("%d", &array[i]);
+	}
+	for (i = n-1; i >= 0; i--)
+	{
+		printf("%d ",array[i]);
+	}
 
+	
 }
 
 void exam9(){
-
+	int n, i, j, array[100];
+	scanf("%d", &n);
+	for ( i = 0; i < n; i++)
+	{
+		scanf("%d", &array[i]);
+	}
+	for ( j = 0; j < 2; j++)
+    {
+		for ( i = 0; i < n; i++)
+		{
+			printf("%d\n", array[i]);
+		}
+	}
 }
 
 void exam10(){
-
+	int n, i, sum = 0, a;
+	scanf("%d", &n);
+	for ( i = 1; i <= n; i++)
+	{
+		scanf("%d", &a);
+		if (a%5== 0)
+		{
+			sum += a;
+		}
+		
+	}
+	printf("%d", sum);
 }
 
 void exam11(){
