@@ -193,35 +193,194 @@ void exam10(){
 }
 
 void exam11(){
+	int n, i, j, cnt = 1;
+	
+	scanf("%d", &n);
 
+	int arr[n][n];
+
+	for ( i = 0; i < n; i++)
+	{
+		for ( j = 0; j < n; j++)
+		{
+			arr[i][j] = cnt;
+			cnt++;
+
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+	}
+	
+	
 }
 
 void exam12(){
+	int n, i, j;
+	
+	scanf("%d", &n);
+	int cnt;
 
+	int arr[n][n];
+
+	for ( i = 0; i < n; i++)
+	{
+		cnt = n * (i+1);
+		for ( j = 0; j < n; j++)
+		{
+			
+			arr[i][j] = cnt;
+			cnt--;
+
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+	}
+	
+	
 }
 
 void exam13(){
+	int n, i, j, cnt = 1;
+	
+	scanf("%d", &n);
 
+	int arr[n][n];
+
+	for ( i = 0; i < n; i++)
+	{
+		cnt = 1 + i;
+		for ( j = 0; j < n; j++)
+		{
+			arr[i][j] = cnt;
+			cnt += n;
+
+			printf("%d ", arr[i][j]);
+		}
+		
+		printf("\n");
+	}
 }
 
 void exam14(){
+	int n, i, j, cnt;
+	
+	scanf("%d", &n);
 
+	int arr[n][n];
+
+	for ( i = 0; i < n; i++)
+	{
+		cnt = n - i;
+		for ( j = 0; j < n; j++)
+		{
+			arr[i][j] = cnt;
+			cnt += n;
+
+			printf("%d ", arr[i][j]);
+		}
+		
+		printf("\n");
+	}
 }
 
 void exam15(){
+	int n, m, i, j, cnt;
+	
+	scanf("%d %d", &n, &m);
 
+	int arr[n][m];
+	cnt = n * m;
+	for ( i = 0; i < n; i++)
+	{
+		
+		for ( j = 0; j < m; j++)
+		{
+			arr[i][j] = cnt;
+			cnt--;
+
+			printf("%d ", arr[i][j]);
+		}
+		
+		printf("\n");
+	}
 }
 
 void exam16(){
+	int n, m, i, j, cnt = 1;
+	
+	scanf("%d %d", &n, &m);
 
+	int arr[n][m];
+	
+	for ( i = n	-1; i >= 0; i--)
+	{
+		
+		for ( j = 0; j < m; j++)
+		{
+			arr[i][j] = cnt;
+			cnt++;
+
+			
+		}
+		
+		
+	}
+	for ( i = 0; i < n; i++)
+	{
+		for ( j = 0; j < m; j++)
+		{
+			printf("%d ", arr[i][j]);	
+		}
+		printf("\n");
+	}
+	
 }
 
 void exam17(){
 
+	int n, m, i, j, cnt;
+	
+	scanf("%d %d", &n, &m);
+
+	int arr[n][m];
+	
+	for ( i = 0; i < n; i++)
+	{
+		cnt = n * m - i;
+		for ( j = 0; j < m; j++)
+		{
+			arr[i][j] = cnt;
+			cnt -= n;
+
+			printf("%d ", arr[i][j]);
+		}
+		
+		printf("\n");
+	}
 }
 
 void exam18(){
+	int n, m, i, j, cnt;
+	
+	scanf("%d %d", &n, &m);
 
+	int arr[n][m];
+	
+	for ( i = n	-1; i >= 0; i--)
+	{
+		cnt = n * m - i;
+		for ( j = 0; j < m; j++)
+		{
+			arr[i][j] = cnt;
+			cnt -= n;
+
+			printf("%d ", arr[i][j]);	
+		}
+		printf("\n");
+		
+	}
+	
+	
 }
 
 void exam19(){
