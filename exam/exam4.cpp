@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void exam1(){
 	int num[3];
@@ -96,10 +97,34 @@ void exam7(){
 }
 
 void exam8(){
-
+	char str[10];
+	printf("당신의 이름은 무엇입니까? : ");
+	scanf("%s", str);
+	printf("안녕하세요 %s님\n", str);
 }
 
 void exam9(){
+	char str1[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+	char str2[] = "world!";
+	int i;
+
+	
+	for ( i = 0; i < 6; i++)
+	{
+		printf("%c", str1[i]);
+	}
+	printf("str1 : %s\n", str1);
+	printf("str2 : %s\n", str2);
+
+	
+	printf("str1의 길이 : %d\n", strlen(str1));
+	printf("str2의 길이 : %d\n", strlen(str2));
+
+	str2[5] = '*';
+	printf("str2 : %s\n", str2);
+
+
+	
 
 }
 
