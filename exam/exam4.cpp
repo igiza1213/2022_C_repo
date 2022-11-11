@@ -123,29 +123,73 @@ void exam9(){
 	str2[5] = '*';
 	printf("str2 : %s\n", str2);
 
+	printf("strlen: %d sizeof: %d\n", strlen(str1), sizeof(str1));
+
+	int a[10];
+	printf("sizeof: %d\n", sizeof(a));
+
 
 	
 
 }
 
 void exam10(){
-
+	int i;
+	char str[10]= "Good time";
+	for ( i = 0; i < 10; i++)
+	{
+		printf("%c\n", str[i]);
+	}
+	
 }
 
 void exam11(){
-
+	char str[6] = "apple";
+	int i = 0;
+	printf("한문자씩 출력\n");
+	while (str[i] != '\0')
+	{
+		printf("%c", str[i]);
+		i++;
+	}
+	
 }
 
 void exam12(){
-
+	char a[] = "seoul robotics";
+	printf("%s\n", a);
+	a[5] = '\0';
+	printf("%s\n", a);
 }
 
 void exam13(){
-
+	char voca[50];
+	int len = 0;
+	printf("영단어 입력: ");
+	scanf("%s", voca);
+	while (voca[len] != '\0')
+	{
+		len++;
+	}
+	printf("입력한 영단어의 길이는 %d\n", len);
+	
 }
 
 void exam14(){
-
+	char str[100];
+	int i;
+	fflush(stdin);
+	gets(str);
+	printf("str의 문자길이: %d\n", strlen(str));
+	for ( i = 0; i < strlen(str); i++)
+	{
+		printf("%c", str[i]);
+	}
+	for ( i = strlen(str)-1; i >= 0	; i--)
+	{
+		printf("%c", str[i]);
+	}
+	
 }
 
 void exam15(){
@@ -153,6 +197,18 @@ void exam15(){
 }
 
 void exam16(){
+	int a[2][3] = {{100, 90, 80}, {70, 60, 50}};
+	int i, j;
+	for (i = 0; i < 2; i++)
+	{
+			for ( j = 0; j < 3; j++)
+			{
+				printf("%4d", a[i][j]);
+			}
+		printf("\n");
+			
+	}
+	
 
 }
 
