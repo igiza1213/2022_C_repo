@@ -1,19 +1,70 @@
 #include <stdio.h>
 
 void exam1(){
+	int i;
+	scanf("%d", &i);
+	printf("%c", i);
 
 }
 
 void exam2(){
+	int i, n = 0, sum = 0;
 
+	for ( i = 1; i <= 7	; i++)
+	{
+		scanf("%d", &n);
+
+		if (n % 2 != 0)
+		{
+			sum += n;
+		} 
+
+		
+		
+		
+	}
+
+	if (sum == 0)
+	{
+		printf("-1");
+	}else{
+	
+
+	printf("%d", sum);
+	}
 }
 
 void exam3(){
+	int i, n, min = 24;
+	int arr[10001]; 
+
+	scanf("%d", &n);
+	for ( i = 0; i < n; i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+
+	for ( i = 0; i < n; i++)
+	{
+		if (min > arr[i])
+		{
+			min = arr[i];
+		}
+		
+	}
+
+	printf("%d", min);
+	
+	
+
+
 
 }
 
 void exam4(){
-
+	int A, B, C;
+	scanf("%d %d %d", &A, &B, &C);
+	
 }
 
 void exam5(){
