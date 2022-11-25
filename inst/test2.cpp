@@ -62,8 +62,6 @@ void exam3(){
 }
 
 void exam4(){
-	int A, B, C;
-	scanf("%d %d %d", &A, &B, &C);
 	
 }
 
